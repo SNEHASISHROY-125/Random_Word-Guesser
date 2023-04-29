@@ -26,7 +26,12 @@ for i in chosen_word:
         empty_list[chosen_word.index(i)] = user_ch
         print(f'{empty_list}{correct} ')
     else:
-        print(f'{empty_list} {wrong} ')        
+        print(f'{empty_list} {wrong} ')
+        while not user_ch == i:
+            user_ch =input('Choose a Letter : ').lower()
+            print(f'{empty_list} {wrong} "Guess again" ')
+        else:
+             empty_list[chosen_word.index(i)] = user_ch       
 #    print(f'{empty_list}{correct} ')
 '''
     if not '_' in empty_list:
