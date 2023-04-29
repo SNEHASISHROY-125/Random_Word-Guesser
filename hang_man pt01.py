@@ -21,8 +21,7 @@ wrong = '''
 for i in chosen_word:
     user_ch =input('Choose a Letter : ').lower()
     if user_ch in chosen_word:
-#        empty_list += user_ch
-#        empty_list.insert(chosen_word.index(i),user_ch)        
+    
         empty_list[chosen_word.index(i)] = user_ch
         print(f'{empty_list}{correct} ')
     else:
